@@ -4,13 +4,15 @@ const initialState = {
     cardData: []
 }
 
-export default function cardItems(state=initialState, action){//action param : react will take care by itself
+export default function cardItems(state=[], action){//action param : react will take care by itself
+      
     switch (action.type){
         case ADD_TO_CART:
-            return{
+             console.warn('reducer...', action);
+            return[
                 ...state,
-                cardData: action.data
-             }
+                {cardData: action.data}
+            ]
         break;
         default:
             return state;
