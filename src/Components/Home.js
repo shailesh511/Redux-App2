@@ -1,7 +1,9 @@
 import React from "react";
 import '../App.css'
 
-const Home = ()=>{
+const Home = (props)=>{
+
+    console.warn("Props in home component is ",props);
    return(
     <div>
     <div>
@@ -22,9 +24,9 @@ const Home = ()=>{
                 </span>
             </div>
             <div className="btn-wrapper item">
-                <button>
-                    Add to cart
-                </button>
+            <button onClick={()=>{props.addToCartHandler({price:1000,name:'i phone 11'})}}>
+               Add To Cart
+            </button>
             </div>
         </div>
     </div>

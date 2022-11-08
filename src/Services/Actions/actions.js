@@ -1,7 +1,8 @@
-import  {ADD_TO_CART, REMOVE_TO_CART} from '../constants'
+import  {ADD_TO_CART, REMOVE_TO_CART} from '../Constants'
 //action sends data from react to Store
 
 export const addToCart= (data)=>{
+    console.warn("action   ", data);
     return {
         type: ADD_TO_CART,
         data: data
