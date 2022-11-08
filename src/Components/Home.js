@@ -23,6 +23,9 @@ const Home = (props)=>{
             <button onClick={()=>{props.addToCartHandler({price:1000,name:'i phone 11'})}}>
                Add To Cart
             </button>
+            <button className="remove-cart-btn" onClick={()=>{props.removeToCartHandler()}}>
+               Remove from Cart
+            </button>
             </div>
         </div>
     </div>

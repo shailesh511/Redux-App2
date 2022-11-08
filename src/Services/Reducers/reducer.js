@@ -13,6 +13,11 @@ export default function cardItems(state=[], action){//action param : react will 
                 ...state,
                 {cardData: action.data}
             ]
+        case REMOVE_TO_CART:
+            state.pop();
+            return[
+               ...state
+            ]
         break;
         default:
             return state;

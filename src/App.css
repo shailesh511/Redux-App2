@@ -41,8 +41,9 @@
 .item{
   float: left;
   width: 120px;
-  padding: 20px;
+  padding: 10px 15px;
   height: 70px;
+  font-size: 10px;
 }
 
 .add-to-cart{
@@ -64,6 +65,14 @@
   border-radius: 50%;
   color: #fff
 }
+
+button.remove-cart-btn{
+  background-color: rebeccapurple;
+  margin-top: 5px;
+  padding: 10px 15px;
+  font-size: 11px;
+}
+
 /* */
 
 @keyframes App-logo-spin {
